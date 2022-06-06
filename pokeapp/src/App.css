@@ -1,5 +1,10 @@
+*{
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+
 #navBar{
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0.878);
   height: fit-content;
   display: flex;
   flex-direction: row;
@@ -7,24 +12,60 @@
   padding: 15px 15px;
 }
 
-li{
+
+a{
   text-decoration: none;
-  list-style: none;
   color: rgb(0, 0, 0);
+}
+
+
+
+.App-header {
+  
+  background-color: #ffffffdc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+button{
+  height: 6vh;
+  width: 8vw;
   align-self: center;
+  margin: 0 10px;
+  border-radius: 10px;
 }
 
 .App {
   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-logo{
+  flex: 2;
+  max-width: 50%;
+  max-height: 50%;
+  align-self: flex-start;
+}
+
+.Home-title{
+  align-self: flex-start;
+  padding: 200px 0 0 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
+
+#Home-button{
+  color: black;
+  text-align: center;
+  background-color: rgb(126, 209, 191);
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: 800;
+}
+

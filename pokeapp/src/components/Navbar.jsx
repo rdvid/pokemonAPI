@@ -6,15 +6,15 @@ function Navbar(){
     return(
         <div id="navBar">
             <img src={logo} id="logo"></img>
-            <li>
+            <button>
                 <Link to="/">Home</Link>
-            </li>
-            <li>
-                <Link to="/cats">Pokemons</Link>
-            </li>
-            <li>
-                <Link to="/sheeps">Contato</Link>
-            </li>
+            </button>
+            <button>
+                <Link to="/pokemons">Pokemons</Link>
+            </button>
+            <button>
+                <Link to="/contato">Contato</Link>
+            </button>
         </div>
     );
 }
