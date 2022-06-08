@@ -1,15 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
+
 *{
-  font-family:Georgia, 'Times New Roman', Times, serif
+  font-family: 'Inter';
+}
+
+/* Home Page */
+
+#navBar{  
+  background-color: #FFFFFF;
+  width: 100vmax;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 15px;
+  border-bottom: 1px  black;
+  box-shadow: 0px 4px 16px rgba(1, 28, 64, 0.2);
 }
 
 
-#navBar{
+#buttonList{
+  margin-right: 60px;
+}
+
+
+.navButton{
+  font-size: 24px;
+  height: 6vh;
+  width: 8vw;
+  align-self: center;
+  margin: 0 15px;
+  border: none;
   background-color: rgba(245, 245, 245, 0.878);
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 15px 15px;
+}
+
+
+.navButton:hover{
+  color: black;
+  text-decoration: 2px underline black;
 }
 
 
@@ -19,53 +49,105 @@ a{
 }
 
 
-
 .App-header {
-  
-  background-color: #ffffffdc;
-  min-height: 100vh;
+  background: #FFFFFF;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-button{
-  height: 6vh;
-  width: 8vw;
-  align-self: center;
-  margin: 0 10px;
-  border-radius: 10px;
-}
 
 .App {
   text-align: center;
 }
 
+
 .App-logo{
   flex: 2;
   max-width: 50%;
   max-height: 50%;
-  align-self: flex-start;
+  align-self: flex-end;
+  padding-top: 140px;
 }
+
 
 .Home-title{
   align-self: flex-start;
   padding: 200px 0 0 200px;
   display: flex;
   flex-direction: column;
-  color: black;
+  color: #282828;
+  font-weight: 800;
+  letter-spacing: 0.02em
 }
+
+
+#Title{
+  font-weight: 800;
+  text-align: left;
+}
+
+
+#Subtitle{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: left;
+}
+
 
 #Home-button{
-  color: black;
-  text-align: center;
-  background-color: rgb(126, 209, 191);
-  height: 50px;
-  width: 150px;
-  font-size: 18px;
-  font-weight: 800;
+  height: 66px;
+  width: 231px;
+  background: #48D0B0;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 12px;
 }
 
+
+.Home-button{
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+}
+
+
+.Home-button:hover{
+  color: white;
+}
+
+
+
+/* Pokemon page*/
+
+h1{
+  margin-top: 75px;
+  font-weight: 400;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #171414;
+}
+
+.Card-container{
+  display: flex;
+  justify-content: center; 
+}
+
+.Card{
+  background-color: grey;
+  width: 162px;
+  height: 110px; 
+  border-radius: 15px;
+  position: fixed;
+  
+}
+
+.Body-card{
+  display: flex;
+  flex-direction: row-reverse;
+}
