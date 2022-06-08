@@ -1,21 +1,19 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Pokemon from './pages/Pokemon';
 import Api from "../src/services/Api";
-import Card from "../src/components/Card"
+import Routes from "./services/Routes"
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Pokemon>
-      </Pokemon>
-      
-    </Router>
-  );
+      <BrowserRouter>
+        <Navbar />
+        <Pokemon></Pokemon>
+      </BrowserRouter>
+      );
 }
 
 export default App;
