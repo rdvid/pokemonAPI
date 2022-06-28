@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Pokename from "../components/Pokename";
+import Card from "../components/Card";
 
 function Pokemon(){
 
@@ -15,6 +16,18 @@ function Pokemon(){
                 />
                 <br />
             </main>
+            <div class="Card-container">
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+            </div>
         </div>
     );
 

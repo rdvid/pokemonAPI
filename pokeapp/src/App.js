@@ -11,7 +11,7 @@ function App() {
   return (
       <BrowserRouter>
         <Navbar />
-        <Pokemon></Pokemon>
+        <Pokemon />
       </BrowserRouter>
       );
 }
