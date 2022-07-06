@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Pokename from "../components/Pokename";
 import Card from "../components/Card";
 
 function Pokemon(){
+
 
     return(
         <div id="Pokemon-page" >
@@ -16,17 +15,19 @@ function Pokemon(){
                 />
                 <br />
             </main>
-            <div class="Card-container">
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+            <div className="Card-container">
+                <Card id={1}/>
+                <Card id={2}/>
+                <Card id={3}/>
+                <Card id={4}/>
+                <Card id={5}/>
+                <Card id={6}/>
+                <Card id={7}/>
+                <Card id={8}/>
+                <Card id={9}/>
+                <Card id={10}/>
+                <Card id={11}/>
+                <Card id={12}/>
             </div>
         </div>
     );

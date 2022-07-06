@@ -124,6 +124,7 @@ a{
 
 /* Pokemon page*/
 
+
 h1{
   margin-top: 75px;
   font-weight: 400;
@@ -131,30 +132,6 @@ h1{
   text-align: center;
   letter-spacing: 3px;
   color: #171414;
-}
-
-.Card-container{
-  padding: 50px 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center; 
-  object-fit: cover;
-  flex-wrap: wrap;
-}
-
-.Card{
-  margin: 2px;
-  background-color: grey;
-  width: 25%;
-  height: 100px; 
-  border-radius: 15px;
-  flex: 1;
-  text-align: center;
-}
-
-.Body-card{
-  display: flex;
-  flex-direction: row-reverse;
 }
 
 #Search-container{
@@ -165,9 +142,46 @@ h1{
 
 .Search-bar{
   width: 70%;
-  border: 1px solid #F1F1F1;
+  border: 2px solid #F1F1F1;
   box-shadow: 4px 4px 16px rgba(1, 28, 64, 0.1);
   border-radius: 40px;
   height: 53px;
   padding: 20px;
+}
+
+.Card-container{
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: row; 
+  object-fit: cover;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Card{
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.735);
+  width: 20%;
+  height: 200px; 
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Card-content{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.Card-header{
+  text-align: end;
+  padding: 2px 20px 0 0;
+}
+
+.Card-pokemon-image{
+  padding: 20px 2px 20px 10px;
+  height: 100%;
+  width: 100%;
 }
